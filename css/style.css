@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Shrikhand', cursive;
+    color: #2e2e2e;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.flex-box{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.main{
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.btn-getApi{
+    width: 160px;
+    height: 160px;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(106, 156, 248);
+    color: #eee;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: .3s;
+}
+
+.btn-getApi:active{
+   /* background-color: rgb(41, 116, 255); */
+   transform: scale(0.95);
+}
+
+.btn-getApi:hover{
+    box-shadow: rgba(22, 22, 43, 0.377) 0px 50px 100px -20px, rgba(0, 0, 0, 0.39) 0px 30px 60px -30px, rgba(10, 37, 64, 0.486) 0px -2px 6px 0px inset;
+}
+
+.output{
+    width: 50%;
+    text-align: center;
+    padding: 4rem;
+}
+
+.activity{
+    padding: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 50%;
+    }
+    .flex-box{
+        flex-direction: column-reverse;
+    }
+
+    .output{
+        width: 100%;
+    }
+    
+  }
